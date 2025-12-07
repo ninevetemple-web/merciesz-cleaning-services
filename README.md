@@ -15,7 +15,7 @@ Professional cleaning and laundry services in Riruta, Nairobi, Kenya.
 - Laundry Drop & Pick Service (KES 200 per delivery)
 - Carpet Cleaning (KES 4,000-10,000)
 
-## Setup
+## Local Setup
 
 ```bash
 npm install
@@ -24,5 +24,53 @@ npm run dev
 
 Visit http://localhost:3000
 
-## Deployment
-Ready for deployment on Vercel or Render
+## Deployment Options
+
+### Deploy to Render (Free)
+1. Go to https://render.com
+2. Sign up with GitHub
+3. Click **New +** → **Web Service**
+4. Connect your `merciesz-cleaning-services` repository
+5. Use these settings:
+   - **Name:** merciesz-cleaning
+   - **Environment:** Node
+   - **Build Command:** `npm install && npm run build`
+   - **Start Command:** `npm start`
+   - **Instance Type:** Free
+6. Click **Create Web Service**
+
+Your app will be live at: `https://merciesz-cleaning.onrender.com`
+
+### Deploy to Vercel (Recommended for Next.js)
+1. Go to https://vercel.com
+2. Click **New Project**
+3. Import your GitHub repository
+4. Click **Deploy**
+
+## Project Structure
+```
+├── pages/
+│   ├── index.js (Home page)
+│   ├── services.js (Services page)
+│   ├── contact.js (Contact page)
+│   └── _app.js (App wrapper)
+├── components/
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── Gallery.js
+│   └── ServiceCard.js
+├── styles/
+│   └── globals.css
+├── public/ (Static files)
+└── package.json
+```
+
+## Features
+- ✅ Responsive design (mobile & desktop)
+- ✅ Service catalog with pricing
+- ✅ Contact form and phone links
+- ✅ Professional UI with Tailwind CSS
+- ✅ Fast Next.js framework
+- ✅ SEO optimized
+- ✅ Free deployment ready
+
